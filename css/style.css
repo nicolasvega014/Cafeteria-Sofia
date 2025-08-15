@@ -58,7 +58,11 @@ h1,h2 {
      padding: 40px;
      font-family: sans-serif;
 }
-
+.espacio{
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+}
 .columna ul{
      list-style: none;
      padding: 0;
@@ -114,12 +118,13 @@ input, textarea {
      flex-direction: column;
 } */
 html, body {
-  height: 100%;         /* Que ocupen todo el alto */
-  margin: 0;            /* Quitar márgenes por defecto */
+     height: 100%;         /* Que ocupen todo el alto */
+     margin: 0;            /* Quitar márgenes por defecto */
+     display: block;
 }
 main {
-     flex:1;
      padding-bottom: 2%;
+     padding-left: 1%;
 }
 footer .redes{
      display: flex;
@@ -148,8 +153,7 @@ footer .redes{
 header{
      background-color: #4e342e;
 }
-
-.nav-item {
-     display: flex;
-     justify-content: space-around;
+a{
+     text-decoration: none;
+     color: white;
 }
