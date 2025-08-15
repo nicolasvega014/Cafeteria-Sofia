@@ -1,3 +1,8 @@
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 * {
      padding: 0;
      margin: 0;
@@ -6,12 +11,6 @@ footer {
      background-color: #4e342e;
 }
 
-li > a{
-     color: white;
-     text-decoration: none;
-     font-size: 15px;
-     padding-right: 29px;
-}
 body {
      font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
      font-weight: 400;
@@ -22,35 +21,22 @@ body {
      border-radius: 60%;
 }
 
-/* header {
-     display: flex;
-     justify-content:space-between;
-     align-items: center;
-} */
-
-/* nav {
-     width: 93%;
-}
-nav ul {
-     display: flex;
-     justify-content: space-between;
-     list-style: none;
-} */
 .imagen-presentacion {
      width:  100%;
      border: 1px solid black;
      border-radius: 2%;
      margin-bottom: 0;
-
 }
 
 h1,h2 {
+     font-family: poppins;
      text-transform: uppercase;
      text-align: center;
      font-weight: 700;
      color: green;
      padding: 4% 0 20px 1vh ;
      text-align: center;
+     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 .menu-comida {
      display: flex;
@@ -64,15 +50,7 @@ h1,h2 {
      flex-direction: column;
      height: 100vh;
 }
-.columna ul{
-     list-style: none;
-     padding: 0;
-     margin: 0;
-}
-.columna li {
-     display: flex;
-     justify-content:flex-end;
-}
+
 li {
      padding-bottom: 15px;
 }
@@ -87,21 +65,11 @@ li {
      height: 100%;
      width: 50%;
 }
-.galeria-reseña{
-     display: flex;
-     align-items: center;
-}
-
-/* .izquierda {
-     text-align: left;
-     padding-bottom: 0;
-} */
 
 .formulario { 
      display: flex;
      flex-direction: column;
      align-items: center;
-     text-align: left;
      text-decoration: none;
      font-weight: bold;
 }
@@ -112,6 +80,7 @@ li {
      width: 50%;
      background-color: #676767;
      padding-bottom: 3vh;
+     box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 }
 input, textarea {
      width: 45%;
@@ -119,20 +88,16 @@ input, textarea {
      min-width: 35%
 }
 .enviar {
-     width: 20%;
+     width: 40%;
      padding-top: 1%;
 }
-/* body {
-     display: flex;
-     flex-direction: column;
-} */
+
 html, body {
      height: 100%;         /* Que ocupen todo el alto */
      margin: 0;            /* Quitar márgenes por defecto */
 }
 main {
-     padding-bottom: 2%;
-     padding-left: 1%;
+     padding: 0 2% 2% 2%;
 }
 footer .redes{
      display: flex;
@@ -153,11 +118,7 @@ footer .redes{
 .derechos {
      text-align: center;
 }
-/* div .menu-abajo {
-     display: flex;
-     justify-content: space-around;
-     list-style: none;
-} */
+
 header{
      background-color: #4e342e;
 }
