@@ -76,21 +76,19 @@ li {
      padding-bottom: 15px;
 }
 .galeria img {
-     width: 23%;
-     height: 20%;
+     width: 100%;
+     height: 100%;
 }
 .galeria {
      background-color: #676767;
+}
+.galeria-reseña img{
+     height: 100%;
+     width: 50%;
+}
+.galeria-reseña{
      display: flex;
      align-items: center;
-     justify-content: space-around;
-}
-.reseña img{
-     height: 14%;
-     width: 14%;
-}
-.reseña {
-     background-color: #d8cea8;
 }
 
 .izquierda {
