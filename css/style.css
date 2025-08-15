@@ -97,7 +97,7 @@ html, body {
      margin: 0;            /* Quitar márgenes por defecto */
 }
 main {
-     padding: 0 2% 2% 2%;
+     padding: 0 2% 2% 3%;
 }
 footer .redes{
      display: flex;
