@@ -46,9 +46,10 @@ nav ul {
 
 h1,h2 {
      text-transform: uppercase;
+     text-align: center;
      font-weight: 700;
      color: green;
-     padding: 4% 0 20px 0 ;
+     padding: 4% 0 20px 1vh ;
      text-align: center;
 }
 .menu-comida {
@@ -93,10 +94,10 @@ li {
      background-color: #d8cea8;
 }
 
-.izquierda {
+/* .izquierda {
      text-align: left;
      padding-bottom: 0;
-}
+} */
 
 .formulario { 
      display: flex;
