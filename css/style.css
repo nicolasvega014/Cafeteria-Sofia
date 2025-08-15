@@ -98,16 +98,26 @@ li {
      padding-bottom: 0;
 }
 
-.formulario {
+.formulario { 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
      text-align: left;
      text-decoration: none;
      font-weight: bold;
 }
+.formulario-completo{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     background-color: #676767;
+     padding-bottom: 3vh;
+}
 input, textarea {
-     width: 35%;
+     width: 45%;
      box-sizing: border-box;
      min-width: 35%
-     
 }
 .enviar {
      width: 20%;
@@ -120,7 +130,6 @@ input, textarea {
 html, body {
      height: 100%;         /* Que ocupen todo el alto */
      margin: 0;            /* Quitar márgenes por defecto */
-     display: block;
 }
 main {
      padding-bottom: 2%;
