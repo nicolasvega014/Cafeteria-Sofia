@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Poppins:wght@500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: green;
+  padding: 4% 0 20px 1vh;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  background-color: #d8cea8;
+  height: 100vh; /* Que ocupen todo el alto */
+  margin: 0; /* Quitar márgenes por defecto */
+}
+body header {
+  background-color: #4e342e;
+}
+body header .navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-top: 2%;
+}
+body header .navbar a {
+  width: 20%;
+}
+body header .navbar .logo-cafe {
+  width: 22%;
+  border-radius: 60%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+body header .navbar .menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+body header .navbar .menu li {
+  list-style-type: none;
+}
+body header .navbar .menu li a {
+  text-decoration: none;
+  color: white;
+  background-color: #388e3c;
+  border-radius: 9%;
+  padding: 5px 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*# sourceMappingURL=estilos.css.map */

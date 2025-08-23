@@ -1,8 +1,3 @@
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 * {
      padding: 0;
      margin: 0;
@@ -12,14 +7,9 @@ footer {
 }
 
 body {
-     font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
-     font-weight: 400;
-     background-color: #d8cea8;
+
 }
-.logo-cafe{
-     width: 8%;
-     border-radius: 60%;
-}
+
 
 .imagen-presentacion {
      width:  100%;
@@ -93,8 +83,7 @@ input, textarea {
 }
 
 html, body {
-     height: 100%;         /* Que ocupen todo el alto */
-     margin: 0;            /* Quitar márgenes por defecto */
+
 }
 main {
      padding: 0 2% 2% 3%;
@@ -120,7 +109,7 @@ footer .redes{
 }
 
 header{
-     background-color: #4e342e;
+
 }
 a{
      text-decoration: none;
