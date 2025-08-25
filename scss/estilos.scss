@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Poppins:wght@500;600;700&display=swap');
 
 $color-nav:#4e342e;
-$color-fondo: #d8cea8;
+$color-fondo: #d8cea9;
 $tipografia-principal:"poppins",sans-serif;
 
 @mixin flex ($direction,$justify-content,$aling-item,$wrap){
@@ -26,13 +26,18 @@ h1,h2 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
+p,h1,h2,h3{ 
+    padding: 2%;
+}
 body {
+        display: flex;
+        flex-direction: column;
         font-family: $tipografia-principal;
         font-weight: 400;
         background-color: $color-fondo;
-        height: 100vh;         /* Que ocupen todo el alto */
+        min-height: 100vh;         /* Que ocupen todo el alto */
         margin: 0;            /* Quitar márgenes por defecto */
+        
 
     header{
         padding-bottom: 10%;
@@ -53,20 +58,39 @@ body {
                     }
 
         main{
+            flex: 1;
                         .imagen-presentacion {
                             width:  100%;
                             border: 1px solid black;
                             border-radius: 1%;
-                            margin-bottom: 0;}
+                            margin-bottom: 0;
+                        }
+                        .menu{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            justify-items: center;
+                        }
                     }
         footer {
             background-color: $color-nav;
+
+            .menu-responsi{
+                display: none;
+            }
             .redes{
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
                 justify-items: center   ;
                 padding-top: 2%;
             }
+            .fa-instagram:hover,
+            .fa-facebook:hover,
+            .fa-linkedin:hover,
+            .fa-youtube:hover {
+                background-color: #8EC5FF;
+                border-radius: 7%;
+            }
+
             .fa-brands{
                 font-size: 30px;
             }
@@ -92,11 +116,29 @@ body {
 
 @media (max-width: 768px) {
         .navbar {
-          position: static !important;
+            position: static !important;
             }
+            
+            .menu-responsi{
+                padding-top: 1%;
+                display: grid !important;
+                grid-template-columns: repeat(5,1fr);
+                justify-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    background-color: #77dd77;
+                    padding: 2%;
+                    border-radius: 6%;
+                }
+                a:hover{
+                    background-color: #CAD5E2;
+                }
+            }
+        }
 
 
 
 
 
-}

@@ -16,11 +16,17 @@ h1, h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+p, h1, h2, h3 {
+  padding: 2%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "poppins", sans-serif;
   font-weight: 400;
-  background-color: #d8cea8;
-  height: 100vh; /* Que ocupen todo el alto */
+  background-color: #d8cea9;
+  min-height: 100vh; /* Que ocupen todo el alto */
   margin: 0; /* Quitar márgenes por defecto */
 }
 body header {
@@ -40,20 +46,38 @@ body header .navbar .logo-cafe {
   border-radius: 60%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
+body main {
+  flex: 1;
+}
 body main .imagen-presentacion {
   width: 100%;
   border: 1px solid black;
   border-radius: 1%;
   margin-bottom: 0;
 }
+body main .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
 body footer {
   background-color: #4e342e;
+}
+body footer .menu-responsi {
+  display: none;
 }
 body footer .redes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   padding-top: 2%;
+}
+body footer .fa-instagram:hover,
+body footer .fa-facebook:hover,
+body footer .fa-linkedin:hover,
+body footer .fa-youtube:hover {
+  background-color: #8EC5FF;
+  border-radius: 7%;
 }
 body footer .fa-brands {
   font-size: 30px;
@@ -75,6 +99,22 @@ body footer .derechos {
 @media (max-width: 768px) {
   .navbar {
     position: static !important;
+  }
+  .menu-responsi {
+    padding-top: 1%;
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+  .menu-responsi a {
+    text-decoration: none;
+    color: white;
+    background-color: #77dd77;
+    padding: 2%;
+    border-radius: 6%;
+  }
+  .menu-responsi a:hover {
+    background-color: #CAD5E2;
   }
 }
 
