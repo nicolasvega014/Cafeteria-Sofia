@@ -21,9 +21,8 @@ h1,h2 {
     font-family: $tipografia-principal;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     color: green;
-    padding: 4% 0 20px 1vh ;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -36,12 +35,15 @@ body {
         margin: 0;            /* Quitar márgenes por defecto */
 
     header{
+        padding-bottom: 10%;
         .navbar {
                 display: flex;
                 flex-wrap: nowrap;
                 position:fixed;
                 background-color: $color-nav;
-                height: 50px;   
+                height: 14%;   
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                font-size: small;
             .logo-cafe {     
                     width: 8%;
                     border-radius: 60%;
@@ -49,4 +51,52 @@ body {
                     }
                     }
                     }
-                }
+
+        main{
+                        .imagen-presentacion {
+                            width:  100%;
+                            border: 1px solid black;
+                            border-radius: 1%;
+                            margin-bottom: 0;}
+                    }
+        footer {
+            background-color: $color-nav;
+            .redes{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                justify-items: center   ;
+                padding-top: 2%;
+            }
+            .fa-brands{
+                font-size: 30px;
+            }
+            .fa-instagram{
+                color:#d62976;
+            }
+            .fa-facebook,.fa-linkedin {
+                color: blue;
+            }
+            .fa-youtube{
+                color: red;
+            }
+            .derechos {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+
+
+
+
+@media (max-width: 768px) {
+        .navbar {
+          position: static !important;
+            }
+
+
+
+
+
+}

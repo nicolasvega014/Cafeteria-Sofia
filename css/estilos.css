@@ -10,9 +10,8 @@ h1, h2 {
   font-family: "poppins", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   color: green;
-  padding: 4% 0 20px 1vh;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -25,37 +24,58 @@ body {
   margin: 0; /* Quitar márgenes por defecto */
 }
 body header {
-  background-color: #4e342e;
+  padding-bottom: 10%;
 }
 body header .navbar {
   display: flex;
   flex-wrap: nowrap;
-  align-content: center;
-  padding-top: 2%;
-}
-body header .navbar a {
-  width: 20%;
+  position: fixed;
+  background-color: #4e342e;
+  height: 14%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: small;
 }
 body header .navbar .logo-cafe {
-  width: 22%;
+  width: 8%;
   border-radius: 60%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
-body header .navbar .menu {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
+body main .imagen-presentacion {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 1%;
+  margin-bottom: 0;
 }
-body header .navbar .menu li {
-  list-style-type: none;
+body footer {
+  background-color: #4e342e;
 }
-body header .navbar .menu li a {
-  text-decoration: none;
+body footer .redes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding-top: 2%;
+}
+body footer .fa-brands {
+  font-size: 30px;
+}
+body footer .fa-instagram {
+  color: #d62976;
+}
+body footer .fa-facebook, body footer .fa-linkedin {
+  color: blue;
+}
+body footer .fa-youtube {
+  color: red;
+}
+body footer .derechos {
+  text-align: center;
   color: white;
-  background-color: #388e3c;
-  border-radius: 9%;
-  padding: 5px 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: static !important;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
