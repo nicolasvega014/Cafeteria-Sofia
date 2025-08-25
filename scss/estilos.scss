@@ -36,38 +36,17 @@ body {
         margin: 0;            /* Quitar márgenes por defecto */
 
     header{
-            background-color:$color-nav;
-
         .navbar {
-            display: flex;
-            flex-wrap: nowrap;
-            align-content: center;
-            padding-top: 2%;
-            a{
-                width: 20%;
-            }
-                .logo-cafe {     
-                    width: 22%;
+                display: flex;
+                flex-wrap: nowrap;
+                position:fixed;
+                background-color: $color-nav;
+                height: 50px;   
+            .logo-cafe {     
+                    width: 8%;
                     border-radius: 60%;
                     box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
-                    }
-                    .menu{
-                        width: 80%;
-                        display: flex;
-                        justify-content: space-around;
-                    li{
-                        list-style-type: none;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        background-color: #388e3c;
-                        border-radius: 9%;
-                        padding: 5px 10px;
-                        box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
                     }
                     }
                     }
                 }
-            }
-
-    }

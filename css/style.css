@@ -1,29 +1,19 @@
-* {
-     padding: 0;
-     margin: 0;
-}
-
-
-body {
-     font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
-     font-weight: 400;
-     background-color:#388e3c;
-}
-
 
 /* BARRA DE NAVEGACION
  */
-.navbar{
+/* .navbar{
      display: flex;
      flex-wrap: nowrap;
-     
+     position:fixed;
+     background-color: #4e342e;
+     height: 50px;     
 }
 .logo-cafe{
      width: 8%;
      border-radius: 60%;
+     
 }
-
-
+ */
 
 
 /*                 
@@ -86,10 +76,6 @@ body {
 
 
 
-
-
-
-
 /* PAGINA 1 
  */
 
@@ -97,7 +83,7 @@ body {
 .imagen-presentacion {
      width:  100%;
      border: 1px solid black;
-     border-radius: 2%;
+     border-radius: 1%;
      margin-bottom: 0;
 }
 
@@ -206,7 +192,7 @@ html, body {
      margin: 0;            /* Quitar márgenes por defecto */
 }
 main {
-     padding: 0 2% 2% 3%;
+     padding: 2% 2% 2% 3%;
 }
 
 
