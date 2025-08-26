@@ -48,6 +48,7 @@ body header .navbar .logo-cafe {
 }
 body main {
   flex: 1;
+  padding-bottom: 6%;
 }
 body main .imagen-presentacion {
   width: 100%;
@@ -60,38 +61,70 @@ body main .menu {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
-body footer {
+body main .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #676767;
+  padding: 5px;
+}
+body main .galeria img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+body main .reseña {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: #676767;
+  padding: 5px;
+}
+body main .reseña img {
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  body main .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
   background-color: #4e342e;
 }
-body footer .menu-responsi {
+footer .menu-responsi {
   display: none;
 }
-body footer .redes {
+footer .redes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   padding-top: 2%;
 }
-body footer .fa-instagram:hover,
-body footer .fa-facebook:hover,
-body footer .fa-linkedin:hover,
-body footer .fa-youtube:hover {
+footer .fa-instagram:hover,
+footer .fa-facebook:hover,
+footer .fa-linkedin:hover,
+footer .fa-youtube:hover {
   background-color: #8EC5FF;
   border-radius: 7%;
 }
-body footer .fa-brands {
+footer .fa-brands {
   font-size: 30px;
 }
-body footer .fa-instagram {
+footer .fa-instagram {
   color: #d62976;
 }
-body footer .fa-facebook, body footer .fa-linkedin {
+footer .fa-facebook, footer .fa-linkedin {
   color: blue;
 }
-body footer .fa-youtube {
+footer .fa-youtube {
   color: red;
 }
-body footer .derechos {
+footer .derechos {
   text-align: center;
   color: white;
 }
@@ -105,16 +138,17 @@ body footer .derechos {
     display: grid !important;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    justify-content: space-between;
   }
   .menu-responsi a {
     text-decoration: none;
     color: white;
-    background-color: #77dd77;
+    background-color: #a7d8b1;
     padding: 2%;
     border-radius: 6%;
   }
   .menu-responsi a:hover {
-    background-color: #CAD5E2;
+    background-color: #91a0b1;
   }
 }
 

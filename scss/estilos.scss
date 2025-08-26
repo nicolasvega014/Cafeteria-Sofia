@@ -59,6 +59,7 @@ body {
 
         main{
             flex: 1;
+            padding-bottom: 6%;
                         .imagen-presentacion {
                             width:  100%;
                             border: 1px solid black;
@@ -69,6 +70,40 @@ body {
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             justify-items: center;
+                        }
+                        .galeria {
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                gap: 10px;
+                                background-color: #676767;
+                                padding: 5px;
+                                
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 8px;
+                            }
+                        }
+                        .reseña{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            justify-items: center;
+                            background-color: #676767;
+                            padding: 5px;
+
+                            img{
+                                height: 100%;
+                                width: 50%;
+                            border-radius: 8px;}
+
+                        }
+                        @media (max-width: 768px) { 
+                            .menu {
+                                display: flex; 
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
                         }
                     }
         footer {
@@ -108,7 +143,6 @@ body {
                 color: white;
             }
         }
-    }
 
 
 
@@ -124,21 +158,20 @@ body {
                 display: grid !important;
                 grid-template-columns: repeat(5,1fr);
                 justify-items: center;
+                justify-content: space-between;
 
                 a{
                     text-decoration: none;
                     color: white;
-                    background-color: #77dd77;
+                    background-color: #a7d8b1 ;
                     padding: 2%;
                     border-radius: 6%;
                 }
                 a:hover{
-                    background-color: #CAD5E2;
+                    background-color: #91a0b1;
                 }
             }
         }
-
-
 
 
 
