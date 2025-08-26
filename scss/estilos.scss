@@ -35,12 +35,12 @@ body {
         font-family: $tipografia-principal;
         font-weight: 400;
         background-color: $color-fondo;
-        min-height: 100vh;         /* Que ocupen todo el alto */
-        margin: 0;            /* Quitar márgenes por defecto */
+        min-height: 100vh;         
+        margin: 0;           
         
 
     header{
-        padding-bottom: 10%;
+        padding-bottom: 15%;
         .navbar {
                 display: flex;
                 flex-wrap: nowrap;

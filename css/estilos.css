@@ -26,11 +26,11 @@ body {
   font-family: "poppins", sans-serif;
   font-weight: 400;
   background-color: #d8cea9;
-  min-height: 100vh; /* Que ocupen todo el alto */
-  margin: 0; /* Quitar márgenes por defecto */
+  min-height: 100vh;
+  margin: 0;
 }
 body header {
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 body header .navbar {
   display: flex;
