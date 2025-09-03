@@ -50,6 +50,9 @@ body main {
   flex: 1;
   padding-bottom: 6%;
 }
+body main .title-1:hover {
+  transform: scale(1.5);
+}
 body main .imagen-presentacion {
   width: 100%;
   border: 1px solid black;
@@ -133,6 +136,12 @@ body main .formulario .formulario-completo .enviar {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  body main .galeria {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 footer {
   background-color: #4e342e;
@@ -143,6 +152,7 @@ footer .menu-responsi {
 footer .redes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 0;
   justify-items: center;
   padding-top: 2%;
 }
@@ -176,8 +186,9 @@ footer .derechos {
   }
   .menu-responsi {
     padding-top: 1%;
-    display: grid !important;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 0;
     justify-items: center;
     justify-content: space-between;
   }
