@@ -51,6 +51,36 @@ body {
                 height: 14%;   
                 text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
                 font-size: small;
+                
+                a {
+                position: relative;
+                color: white; // color inicial de los links
+                text-decoration: none;
+                padding: 0 10px;
+                transition: color 0.3s ease;
+
+                &:hover {
+                color: $color-fondo; // el beige clarito que ya usás
+                }
+
+                // subrayado animado
+                &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                background-color: $color-fondo;
+                transition: width 0.3s ease;
+                }
+
+                &:hover::after {
+                width: 100%;
+                }
+            }
+
+
             .logo-cafe {     
                     width: 8%;
                     border-radius: 60%;
@@ -67,6 +97,7 @@ body {
         main{
             flex: 1;
             padding-bottom: 6%;
+            animation: fadeIn 1s ease forwards;
             .title-1:hover{
                 transform: scale(1.5);
             }
@@ -75,11 +106,13 @@ body {
                             border: 1px solid black;
                             border-radius: 1%;
                             margin-bottom: 0;
+                            animation: float 3s ease-in-out infinite;
                         }
                         .menu{
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             justify-items: center;
+                            animation: fadeIn 1s ease forwards;
                         }
                         .galeria {
                                 display: grid;
@@ -159,12 +192,9 @@ body {
         footer {
             background-color: $color-nav;
 
-            .menu-responsi{
-                display: none;
-            }
             .redes{
-                
-                padding-top: 2%;
+                @include grid(repeat(4,1fr), center);
+                            padding-top: 2%;
             }
             .fa-instagram:hover,
             .fa-facebook:hover,
@@ -213,34 +243,8 @@ body {
 
 
 
-
-
-@media (max-width: 768px) {
-        .navbar {
-            position: static !important;
-            }
-        }
-            
-@media (max-width: 768px){
-            .menu-responsi{
-                padding-top: 1%;
-                display: grid !important;
-                grid-template-columns: repeat(5,1fr);
-                justify-items: center;
-                justify-content: space-between;
-
-                a{
-                    text-decoration: none;
-                    color: white;
-                    background-color: #a7d8b1 ;
-                    padding: 2%;
-                    border-radius: 6%;
-                }
-                a:hover{
-                    background-color: #91a0b1;
-                }
-            }
-        }
-
-
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+}
 

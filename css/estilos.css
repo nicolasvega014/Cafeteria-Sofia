@@ -42,6 +42,29 @@ body header .navbar {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: small;
 }
+body header .navbar a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+body header .navbar a:hover {
+  color: #d8cea9;
+}
+body header .navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #d8cea9;
+  transition: width 0.3s ease;
+}
+body header .navbar a:hover::after {
+  width: 100%;
+}
 body header .navbar .logo-cafe {
   width: 8%;
   border-radius: 60%;
@@ -55,6 +78,7 @@ body header .navbar .logo-cafe {
 body main {
   flex: 1;
   padding-bottom: 6%;
+  animation: fadeIn 1s ease forwards;
 }
 body main .title-1:hover {
   transform: scale(1.5);
@@ -64,11 +88,13 @@ body main .imagen-presentacion {
   border: 1px solid black;
   border-radius: 1%;
   margin-bottom: 0;
+  animation: float 3s ease-in-out infinite;
 }
 body main .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  animation: fadeIn 1s ease forwards;
 }
 body main .galeria {
   display: grid;
@@ -154,10 +180,10 @@ body main .formulario .formulario-completo .enviar {
 footer {
   background-color: #4e342e;
 }
-footer .menu-responsi {
-  display: none;
-}
 footer .redes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   padding-top: 2%;
 }
 footer .fa-instagram:hover,
@@ -203,28 +229,14 @@ footer .derechos {
   }
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    position: static !important;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-}
-@media (max-width: 768px) {
-  .menu-responsi {
-    padding-top: 1%;
-    display: grid !important;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    justify-content: space-between;
-  }
-  .menu-responsi a {
-    text-decoration: none;
-    color: white;
-    background-color: #a7d8b1;
-    padding: 2%;
-    border-radius: 6%;
-  }
-  .menu-responsi a:hover {
-    background-color: #91a0b1;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
