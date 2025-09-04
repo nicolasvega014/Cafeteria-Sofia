@@ -55,16 +55,15 @@ body {
                 
                 a {
                 position: relative;
-                color: white; // color inicial de los links
+                color: white;
                 text-decoration: none;
                 padding: 0 10px;
                 transition: color 0.3s ease;
 
                 &:hover {
-                color: $color-fondo; // el beige clarito que ya usás
+                color: $color-fondo;
                 }
 
-                // subrayado animado
                 &::after {
                 content: "";
                 position: absolute;
