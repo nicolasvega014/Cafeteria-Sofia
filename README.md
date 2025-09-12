@@ -1,7 +1,7 @@
-#Cafetería Sofía
+# ☕ Cafetería Sofía
+
 Proyecto web para una cafetería ficticia llamado **Cafetería Sofía**.  
 Incluye páginas informativas, menú, galería de productos y contacto.
-
 ---
 
 ## 📂 Estructura del proyecto
