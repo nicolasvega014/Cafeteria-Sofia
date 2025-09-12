@@ -39,9 +39,11 @@ body header .navbar {
   flex-wrap: nowrap;
   position: fixed;
   background-color: #4e342e;
-  height: 14%;
+  height: auto;
+  width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: small;
+  z-index: 1;
 }
 body header .navbar a {
   position: relative;
@@ -67,13 +69,18 @@ body header .navbar a:hover::after {
   width: 100%;
 }
 body header .navbar .logo-cafe {
-  width: 8%;
+  width: 16%;
   border-radius: 60%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 768px) {
   body header .navbar {
     position: static;
+  }
+  body header .navbar-collapse .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 body main {
@@ -134,8 +141,9 @@ body main .formulario .formulario-completo {
   align-items: center;
   width: 50%;
   background-color: #676767;
-  padding-bottom: 3vh;
+  padding: 20px 0;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 body main .formulario .formulario-completo input, body main .formulario .formulario-completo textarea {
   width: 80%;
@@ -152,22 +160,19 @@ body main .formulario .formulario-completo .enviar {
   padding-top: 1%;
 }
 @media (max-width: 768px) {
+  body main .formulario .formulario-completo {
+    width: 90%;
+  }
+  body main .formulario input,
+  body main .formulario textarea, body main .formulario .enviar {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
   body main .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  body main .formulario-completo {
-    width: 90%;
-  }
-  body main input,
-  body main textarea {
-    width: 100%;
-  }
-  body main .enviar {
-    width: 100%;
   }
 }
 @media (max-width: 768px) {
