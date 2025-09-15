@@ -168,6 +168,15 @@ body main .formulario .formulario-completo .enviar {
     width: 100%;
   }
 }
+body main .link_pag {
+  border-radius: 6%;
+  text-decoration: none;
+  color: rgb(124, 134, 255);
+}
+body main .link_pag:hover {
+  color: rgb(255, 32, 86);
+  background-color: #45556C;
+}
 @media (max-width: 768px) {
   body main .menu {
     display: flex;
@@ -180,6 +189,41 @@ body main .formulario .formulario-completo .enviar {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+  }
+}
+
+.body-gracias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.body-gracias .gracias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #45556C;
+  color: white;
+  border-radius: 1%;
+  border: black solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  max-height: auto;
+  animation: slideDown 0.8s ease-out;
+}
+.body-gracias .gracias h1 {
+  animation: none;
+}
+.body-gracias .gracias p {
+  text-align: center;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

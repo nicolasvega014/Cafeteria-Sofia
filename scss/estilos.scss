@@ -177,7 +177,17 @@ body {
                                     width: 100%;
                                 }
                         }
-                    }
+                        }
+                        .link_pag{
+                            border-radius: 6%;
+                            text-decoration: none;
+                            color: rgb(124, 134, 255);
+
+                            &:hover {
+                        color: rgb(255, 32, 86);
+                        background-color: #45556C;
+                        }
+                        }
                         @media (max-width: 768px) { 
                             .menu {
                                 @include flex(column,center);
@@ -188,8 +198,45 @@ body {
                                 @include flex(column,stretch)
                             }
                         }
-                        }
                     }
+                    }
+        .body-gracias{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .gracias{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #45556C;
+                        color: white;
+                        border-radius: 1%;
+                        border: black solid;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+                        max-height: auto;
+                        animation: slideDown 0.8s ease-out;
+
+
+                        h1{
+                            animation: none;
+                        }
+
+                        p{
+                            text-align: center;
+                        }
+                            @keyframes slideDown {
+                            from {
+                                transform: translateY(-100px);
+                                opacity: 0;
+                            }
+                            to {
+                                transform: translateY(0);
+                                opacity: 1; 
+                            }
+                    }
+        }
+        }
         footer {
             background-color: $color-nav;
 
