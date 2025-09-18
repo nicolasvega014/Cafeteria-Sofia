@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Poppins:wght@500;600;700&display=swap");
+body main .formulario .formulario-completo, body main .reseña, body main .galeria {
+  background-color: #676767;
+  padding: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +17,6 @@ h1, h2 {
   text-align: center;
   font-weight: 600;
   color: green;
-  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: slideDown 1s ease-out;
 }
@@ -108,8 +112,6 @@ body main .galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  background-color: #676767;
-  padding: 5px;
 }
 body main .galeria img {
   width: 100%;
@@ -120,8 +122,6 @@ body main .reseña {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  background-color: #676767;
-  padding: 5px;
 }
 body main .reseña img {
   height: 100%;
@@ -140,7 +140,6 @@ body main .formulario .formulario-completo {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  background-color: #676767;
   padding: 20px 0;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
@@ -212,9 +211,21 @@ body main .link_pag:hover {
 }
 .body-gracias .gracias h1 {
   animation: none;
+  color: white;
+  text-decoration: underline;
 }
 .body-gracias .gracias p {
   text-align: center;
+}
+.body-gracias .gracias a {
+  text-decoration: none;
+  color: #69B31E;
+  border: solid 1px #69B31E;
+  border-radius: 3%;
+}
+.body-gracias .gracias a:hover {
+  background-color: #2984D1;
+  text-decoration: underline;
 }
 @keyframes slideDown {
   from {
