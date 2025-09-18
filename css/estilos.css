@@ -207,12 +207,13 @@ body main .link_pag:hover {
   border: black solid;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
   max-height: auto;
+  padding: 0px 20px 20px 20px;
   animation: slideDown 0.8s ease-out;
 }
 .body-gracias .gracias h1 {
   animation: none;
-  color: white;
   text-decoration: underline;
+  color: white;
 }
 .body-gracias .gracias p {
   text-align: center;
